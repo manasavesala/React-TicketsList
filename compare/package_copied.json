@@ -1,5 +1,5 @@
 {
-  "name": "react-help-queue",
+  "name": "react_basics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,20 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manasavesala/React-TicketsList.git"
+    "url": "git+https://github.com/hwisoo/react_basics.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manasavesala/React-TicketsList/issues"
+    "url": "https://github.com/hwisoo/react_basics/issues"
   },
-  "homepage": "https://github.com/manasavesala/React-TicketsList#readme",
+  "homepage": "https://github.com/hwisoo/react_basics#readme",
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-router-dom": "^4.0.0",
-    "styled-jsx": "^3.2.1"
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
