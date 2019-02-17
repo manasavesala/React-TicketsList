@@ -21,7 +21,7 @@ var masterTicketList = [
 
 function TicketList(){
   return (
-    <div>
+    <div className="ticketListDiv">
       <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
