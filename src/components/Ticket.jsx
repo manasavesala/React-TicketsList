@@ -9,7 +9,7 @@ function Ticket(props){
             background-color: aqua;
           }
         `}</style>
-      <h3>{props.location} - {props.names}</h3>
+      <h3>{props.location} - {props.names} - {props.ticketId}</h3>
       <p><em>{props.issue}</em></p>
       <hr/>
     </div>
@@ -19,7 +19,8 @@ function Ticket(props){
 Ticket.propTypes = {
   names: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+  issue: PropTypes.string,
+  ticketId: PropTypes.string
 };
 
 export default Ticket;
