@@ -11,6 +11,7 @@ function TicketList(props){
           location={ticket.location}
           issue={ticket.issue} 
           key={ticket.id}
+          formattedWaitTime={ticket.formattedWaitTime}
           ticketId={ticket.id} />
       )}
     </div>
