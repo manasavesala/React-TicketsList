@@ -2,18 +2,18 @@ import React from 'react';
 import Moment from 'moment';
 import { connect } from 'react-redux';
 import { v4 } from 'uuid';
+import c from './../constants';
 
 function NewTicketForm(props){
   let _names = null;
   let _location = null;
   let _issue = null;
-  
 
   function handleNewTicketFormSubmission(event) {
     const { dispatch } = props;
     event.preventDefault();
     const action = {
-      type: 'ADD_TICKET',
+      type: c.ADD_TICKET,
       id: v4(),
       names: _names.value,
       location: _location.value,
@@ -22,7 +22,6 @@ function NewTicketForm(props){
       formattedWaitTime: new Moment().fromNow(true)
     };
     dispatch(action);
-
     _names.value = '';
     _location.value = '';
     _issue.value = '';
@@ -34,22 +33,21 @@ function NewTicketForm(props){
         <input
           type='text'
           id='names'
-          ref={(input) => {_names = input;}}
-          placeholder='Pair Names'/>
+          placeholder='Pair Names'
+          ref={(input) => {_names = input;}}/>
         <input
           type='text'
           id='location'
-          ref={(input) => {_location = input;}}
-          placeholder='Location'/>
+          placeholder='Location'
+          ref={(input) => {_location = input;}}/>
         <textarea
           id='issue'
-          ref={(bullshit) => {_issue = bullshit;}}
-          placeholder='Describe your issue.'/>
+          placeholder='Describe your issue.'
+          ref={(textarea) => {_issue = textarea;}}/>
         <button type='submit'>Help!</button>
       </form>
     </div>
   );
 }
-
 
 export default connect()(NewTicketForm);
